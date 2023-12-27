@@ -34,5 +34,19 @@ if show_camera:
     picture = st.camera_input("Tomar una foto")
 
 if picture:
-    st.image(picture)
+    st.image(picture);
+
+# URL del video de YouTube
+video_url = "https://www.youtube.com/watch?v=n6Qj3PYyjEk&list=RDGMEM29nh-so2GiiVvCzzeO3LJQVMn6Qj3PYyjEk&start_radio=1&ab_channel=Kariganreggaedrummer"
+
+# Mostrar el video en la aplicación Streamlit
+st.video(video_url)
+
+#Conexión con una base de datos
+conn = st.connection("sql")
+df = conn.query("select * from pet_owners")
+st.dataframe(df)
+
+
+
 
