@@ -124,7 +124,7 @@ if selected == "Home":
 if selected == "Projects":
     st.title (f"Ha seleccionado {selected} ")
 
-    st.header('Este es un video de prueba')
+    st.header('Este es un video de prueba') 
     
     # URL del video de YouTube
     video_url = "https://www.youtube.com/watch?v=n6Qj3PYyjEk&list=RDGMEM29nh-so2GiiVvCzzeO3LJQVMn6Qj3PYyjEk&start_radio=1&ab_channel=Kariganreggaedrummer"
