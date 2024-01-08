@@ -144,6 +144,3 @@ if selected == "Contact":
 
     #st.dataframe(df)
 
-
-
-
