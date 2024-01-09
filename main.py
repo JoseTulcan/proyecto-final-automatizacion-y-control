@@ -6,10 +6,10 @@ import difflib
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from streamlit_option_menu import option_menu
-
+ 
 #Configuración de diseño general de página(Fondo,texto)
 st.markdown(
-    """
+    """ 
     <style>
     .stApp {
       background-color: #333333; 
