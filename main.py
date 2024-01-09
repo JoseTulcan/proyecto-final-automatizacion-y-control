@@ -112,13 +112,20 @@ if selected == "Home":
 
         i = 1
 
-        for movie in sorted_similar_movies:
-            index = movie[0]
-            title_from_index = movies_data[movies_data.index==index]['title'].values[0]
-            if (i<30):
-                #print(i, '.',title_from_index)
-                st.markdown(f'<p style="color: white;">{title_from_index}</p>', unsafe_allow_html=True)
-                i+=1
+        #for movie in sorted_similar_movies:
+        #    index = movie[0]
+        #    title_from_index = movies_data[movies_data.index==index]['title'].values[0]
+        #    if (i<30):
+        #        #print(i, '.',title_from_index)
+        #        st.markdown(f'<p style="color: white;">{title_from_index}</p>', unsafe_allow_html=True)
+        #        i+=1
+
+        cols = st.columns(5)
+        for i, movie in enumerate(sorted_similar_movies[:30]):
+            index = movie[0] 
+            title = movies_data[movies_data.index==index]['title'].values[0]
+            with cols[i % 5]:
+                st.markdown(title)
 
 ############################ PAGINA 2 ##################################
 if selected == "Projects":
