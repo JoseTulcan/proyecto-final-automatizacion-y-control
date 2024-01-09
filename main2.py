@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 import requests, io
 import PIL.Image
 from urllib.request import urlopen
-
+ 
 with open('movie_data.json', 'r+', encoding='utf-8') as f:
     data = json.load(f)
 with open('movie_titles.json', 'r+', encoding='utf-8') as f:
